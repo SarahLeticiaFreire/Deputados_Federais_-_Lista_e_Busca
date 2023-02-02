@@ -1,0 +1,25 @@
+/* Add application styles & imports to this file! */
+
+table{
+  width:100%;
+  border: 5px solid black;
+  border-collapse: collapse;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  background-color: rgba(235, 235, 128, 0.815);
+}
+body {
+  background-image: url('imgs/bg-gradient.jpg');
+  background-color: rgb(236, 236, 216);
+  border-radius: 5%;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  
+}
+button{
+  background-color: rgb(168, 235, 218);
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}

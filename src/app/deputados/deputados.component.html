@@ -1,0 +1,24 @@
+<button><a routerLink="partidos">Pesquisar Deputados</a></button>
+<table *ngFor="let deputado of deputados; index as i">
+  <tr>
+    <th>Parlamentar</th>
+    <th>Informações</th>
+  </tr>
+  <tr>
+    <th rowspan="4">
+      <img src="{{ deputado.urlFoto }}" height="170px" width="150px" />
+    </th>
+    <td>Nome: {{ deputado.nome }}</td>
+  </tr>
+  <tr>
+    <td>Partido: {{ deputado.siglaPartido }}</td>
+  </tr>
+  <tr>
+    <td>Legislatura: {{ deputado.idLegislatura }}</td>
+  </tr>
+  <tr>
+    <td>UF: {{ deputado.siglaUf }}</td>
+  </tr>
+</table>
+<input type="button" value="listar todos os deputados"/>
+<router-outlet></router-outlet>

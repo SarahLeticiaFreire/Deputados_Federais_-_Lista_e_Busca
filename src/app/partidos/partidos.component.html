@@ -1,0 +1,22 @@
+<button><a routerLink="">Voltar</a></button>
+<div>
+  <br>
+  <label for="nome">Digite o nome do deputado: </label>
+  <input type="text" #nome />
+  <button type="button" value="pesquisar" (click)="pesquisa(nome.value)">OK</button>
+</div>
+<table *ngFor="let deputado of deputados; index as i">
+  <tr>
+    <th rowspan="3">
+      <img src="{{ deputado.urlFoto }}" height="150px" width="150px" />
+    </th>
+    <td>Nome: {{ deputado.nome }}</td>
+  </tr>
+  <tr>
+    <td>UF: {{ deputado.siglaUf }}</td>
+  </tr>
+  <tr>
+    <td>Partido: {{ deputado.siglaPartido }}</td>
+  </tr>
+</table>
+<router-outlet></router-outlet>
